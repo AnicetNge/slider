@@ -1,0 +1,90 @@
+*{ margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/*section temoignages*/
+section#container{
+    width: 100%;
+    max-width: 1400px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{margin-bottom: 30px;font-family: cursive;font-size: 48px;color: blueviolet;}
+
+div.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+    padding: 10px;
+}
+div#sliderctn{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    gap: 4px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+div.item{
+    height: 100%;
+    min-width: 200px;
+    background-image: url(./images/art12.png);
+    background-position: center;
+    background-size: cover;
+}
+div.control{
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+div.control:hover{
+    background-color: rgb(114, 31, 192);
+    border: 3px solid chartreuse;
+}
+div.control span{
+    user-select: none;
+}
+div.indicators{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div.indicator{
+    width: 10px;
+    height: 10px;
+    background-color: #80808073;
+    border-radius: 50%;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+div.indicators div.actif{
+    width: 15px;
+    height: 15px;
+    background-color: blueviolet;
+}
+/* telephones*/
+@media  screen and (max-width: 600px){
+    div.control{
+        display: none;
+    }
+}
