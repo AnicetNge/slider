@@ -5,6 +5,14 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
+    position:relative;
+}
+div#layer{
+    position: absolute;
+    z-index:1;
+    width: 100vw;
+    height: 100vw;
+    background-color: white;
 }
 /*section temoignages*/
 section#container{
