@@ -5,6 +5,9 @@ const indicators=document.querySelectorAll("div.indicator")
 //tracker du slider
 let tracker=0
 const ITEM_WIDTH=200
+window.addEventListener("load",function(){
+    document.querySelector("div#layer").style.display="none"
+})
 
 
 //control le bouton gauche du slider
